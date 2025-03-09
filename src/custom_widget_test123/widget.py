@@ -1,7 +1,11 @@
 import anywidget
 import traitlets
 
-from custom_widget_test123.config import JS_PATH, CSS_PATH
+from pathlib import Path
+
+CURRENT_DIR = Path(__file__).parent
+JS_PATH = CURRENT_DIR / "static" / "script.js"
+CSS_PATH = CURRENT_DIR / "static" / "styles.css"
 
 class CustomWidget(anywidget.AnyWidget):
     _esm = JS_PATH
