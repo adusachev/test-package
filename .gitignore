@@ -7,3 +7,4 @@ data/
 .mypy_cache/
 .ipynb_checkpoints/
 dist/
+tmp_*
