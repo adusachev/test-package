@@ -1,0 +1,40 @@
+[project]
+name = "custom_widget_test123"
+version = "0.1.0"
+description = "Test jupyter widget"
+requires-python = ">=3.8"
+dependencies = [
+    "anywidget=0.9.15",
+    "numpy==1.24.4",
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+ { name = "usacheval", email = "usachev.alexe@gmail.com" },
+]
+keywords = ["Jupyter", "Widget"]
+
+
+[project.optional-dependencies]
+dev = [
+    "notebook=7.3.2",
+    "nbstripout=0.8.0",
+    "ipykernel",
+]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# automatically add the dev feature to the default env (e.g., hatch shell)
+[tool.hatch.envs.default]
+features = ["dev"]
+
+[project.urls]
+Homepage = "https://github.com/adusachev/test-package"
+
+[tool.hatch.build]
+only-packages = true
+artifacts = ["src/custom_widget_test123/static/*"]
+
