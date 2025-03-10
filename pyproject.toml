@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "custom_widget_test123"
-version = "0.1.0"
+version = "0.1.1"
 description = "Jupyter widget test"
 authors = ["usacheval <usachev.alexe@gmail.com>", ]
 license = "MIT"
