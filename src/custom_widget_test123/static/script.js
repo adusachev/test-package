@@ -4,7 +4,7 @@ function render({ model, el }) {
     let button = document.createElement("button");
     button.innerHTML = `count is ${model.get("value")}`;
     button.addEventListener("click", () => {
-      model.set("value", model.get("value") + 10);
+      model.set("value", model.get("value") + 20);
       model.save_changes();
     });
     model.on("change:value", () => {

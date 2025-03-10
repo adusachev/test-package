@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "custom_widget_test123"
-version = "0.1.1"
+version = "0.1.2"
 description = "Jupyter widget test"
 authors = ["usacheval <usachev.alexe@gmail.com>", ]
 license = "MIT"
@@ -24,6 +24,7 @@ include = [
 python = ">=3.8,<3.13"
 anywidget = "0.9.15"
 numpy = "1.24.4"
+matplotlib = "3.7.5"
 
 
 [tool.poetry.group.dev.dependencies]
